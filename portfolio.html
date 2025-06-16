@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ibraheem Nassar's Portfolio</title>
+    <link rel="icon" style="border-radius:20px ;" type="image/png" href="icon.png" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+<!--  <button class="theme-toggle" onclick="document.body.classList.toggle('dark-mode')">
+    <i class="fas fa-adjust"></i>
+  </button>-->
+
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#stacks">Stack</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="Ibraheem Nassar - Backend Developer.pdf" target="_blank" class="cv-button">My CV</a></li>
+  </ul>
+</nav>
+
+
+
+  <header class="hero">
+<div class="theme-toggle-wrapper">
+  <input type="checkbox" id="themeToggle" hidden />
+  <label for="themeToggle" class="theme-toggle">
+    <span class="toggle-circle" id="toggleCircle"></span>
+    <span class="toggle-label-text" id="themeText">DAY MODE</span>
+  </label>
+</div>
+
+
+    <img src="img/IMG_6917.jpg" alt="Your Photo" class="profile-photo">
+    <h1>Ibraheem Nassar</h1>
+    <p>Backend Developer & Data Analyst | Django · Google Apps Script · Data Automation</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Results-oriented Backend Developer and Data Analyst with strong Django expertise and deep knowledge of Google Apps Script. Skilled in building dynamic platforms, automating workflows, and visualizing insights via Google Sheets. With 7 years of experience in graphic design and multiple high-impact tech systems built for AIESEC Egypt, I bring a unique blend of engineering precision and creative thinking.</p>
+  </section>
+<!-- Only project-related section shown below for brevity -->
+<!-- Swiper CSS -->
+<script>
+  const toggle = document.getElementById('themeToggle');
+  const text = document.getElementById('themeText');
+  const circle = document.getElementById('toggleCircle');
+
+  toggle.addEventListener('change', () => {
+    const isDark = toggle.checked;
+
+    // Toggle dark mode class on body
+    document.body.classList.toggle('dark-mode', isDark);
+
+    // Update label and icon
+    text.textContent = isDark ? 'NIGHT MODE' : 'DAY MODE';
+  });
+  toggle.addEventListener('change', () => {
+    const isDark = toggle.checked;
+    document.body.classList.toggle('dark-mode', isDark);
+    text.textContent = isDark ? 'NIGHT MODE' : 'DAY MODE';
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+</script>
+
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="project">
+      <div class="swiper image-carousel">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/mea.png" alt="MEA Summit"></div>
+                    <div class="swiper-slide"><img src="img/mea1.png" alt="MEA Summit"></div>
+          <div class="swiper-slide"><img src="img/mea2.png" alt="MEA Summit"></div>
+ <div class="swiper-slide"><img src="img/mea3.png" alt="MEA Summit"></div>
+ <div class="swiper-slide"><img src="img/mea4.png" alt="MEA Summit"></div>
+ <div class="swiper-slide"><img src="img/mea5.png" alt="MEA Summit"></div>
+ 
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <h3>MEA Summit Platform (Full-stack)</h3>
+      <div class="project-stack-icons">
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-css3-alt"></i>
+        <i class="fab fa-js"></i>
+        <i class="fab fa-python"></i>
+      </div>
+      <p>A comprehensive full-stack solution built for MEA Summit 2024. Developed both the frontend website and a Django-based backend system to manage delegate registrations, automate data tracking, and power real-time updates across pages. The platform ensured smooth user experience and operational efficiency during the event lifecycle.</p>
+      <a href="https://mea-summit.aiesec.org.eg" target="_blank" class="view-btn">Visit Website</a>
+    </div>
+
+    <div class="project">
+      <div class="swiper image-carousel">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/1.png" alt=" Screenshot 1"></div>
+          <div class="swiper-slide"><img src="img/2.png" alt=" Screenshot 2"></div>
+          <div class="swiper-slide"><img src="img/3.png" alt=" Screenshot 2"></div>
+          <div class="swiper-slide"><img src="img/4.png" alt=" Screenshot 2"></div>
+          <div class="swiper-slide"><img src="img/5.png" alt="Momentum Screenshot 2"></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <h3>National Conference Website (Frontend)</h3>
+      <div class="project-stack-icons">
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-css3-alt"></i>
+        <i class="fab fa-js"></i>
+      </div>
+      <p>A responsive and visually engaging landing website developed for AIESEC national conferences. It showcases conference highlights, essential information, and call-to-action sections while integrating seamlessly with the backend Django platform through RESTful APIs to handle registration flows, real-time deadlines, and dynamic content updates.</p>
+      <a href="https://momentum-25.aiesec.org.eg" target="_blank" class="view-btn">Visit Website</a>
+    </div>
+
+    <!-- ... keep other project cards the same ... -->
+ <div class="project">
+      <div class="swiper image-carousel">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/y2b.png" alt="MEA Summit"></div>
+                    <div class="swiper-slide"><img src="img/y2b2.png" alt="MEA Summit"></div>
+                    <div class="swiper-slide"><img src="img/y2b3.png" alt="MEA Summit"></div>
+                    <div class="swiper-slide"><img src="img/y2b4.png" alt="MEA Summit"></div>
+                    <div class="swiper-slide"><img src="img/y2b5.png" alt="MEA Summit"></div>
+
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <h3>Youth to Business Event (Full-stack)</h3>
+      <div class="project-stack-icons">
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-css3-alt"></i>
+        <i class="fab fa-js"></i>
+        <i class="fab fa-python"></i>
+      </div>
+      <p>A complete registration platform developed for the Youth to Business (Y2B) forum. Built using Django for backend processing and a responsive frontend interface, the system supported participant signups, real-time data validation, and CV uploads. It streamlined the delegate intake process and centralized participant data for efficient event management.</p>
+      <a href="https://youth2business.aiesec.org.eg" target="_blank" class="view-btn">Visit Website</a>
+    </div>
+
+    <div class="project">
+      <div class="swiper image-carousel">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img style="filter: blur(1px);" src="img/mc.png" alt=" Screenshot 1"></div>
+
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <h3>AIESEC in Egypt Conferences Backend</h3>
+      <div class="project-stack-icons">
+        <i class="fab fa-python"></i>
+        <i class="fas fa-database"></i>
+        <i class="fab fa-js"></i>
+      </div>
+      <p>A Django backend built for AIESEC in Egypt’s national conferences. It manages delegate registrations, handles file uploads like CVs or IDs, and collects merchandise orders. The system connects smoothly with the frontend (like Momentum) using APIs, making the process organized and easy to manage.</p>
+    </div>
+<div class="project">
+      <div class="swiper image-carousel">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/partner1.png" alt="MEA Summit"></div>
+                    <div class="swiper-slide"><img src="img/partner2.png" alt="MEA Summit"></div>
+                    <div class="swiper-slide"><img src="img/partner3.png" alt="MEA Summit"></div>
+                    <div class="swiper-slide"><img src="img/partner4.png" alt="MEA Summit"></div>
+                    <div class="swiper-slide"><img src="img/partner5.png" alt="MEA Summit"></div>
+                    <div class="swiper-slide"><img src="img/partner6.png" alt="MEA Summit"></div>
+
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <h3>AIESEC in Egypt Partners Portal (Full-stack)</h3>
+      <div class="project-stack-icons">
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-css3-alt"></i>
+        <i class="fab fa-js"></i>
+        <i class="fab fa-python"></i>
+      </div>
+      <p>A dedicated portal for companies and organizations to initiate partnerships with AIESEC in Egypt. The system features a sleek frontend embedded in our official website and a Django backend for processing and managing partnership requests, automating follow-ups, and storing partnership data securely. Built for efficiency and easy integration with ongoing partner workflows.</p>
+      <a href="https://aiesec.org.eg/partner.html" target="_blank" class="view-btn">Visit Website</a>
+    </div>
+
+    <div class="project">
+      <div class="swiper image-carousel">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img style="filter: blur(1px);" src="img/mc.png" alt=" Screenshot 1"></div>
+
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <h3>AIESEC in Egypt Conferences Backend</h3>
+      <div class="project-stack-icons">
+        <i class="fab fa-python"></i>
+        <i class="fas fa-database"></i>
+        <i class="fab fa-js"></i>
+      </div>
+      <p>A Django backend built for AIESEC in Egypt’s national conferences. It manages delegate registrations, handles file uploads like CVs or IDs, and collects merchandise orders. The system connects smoothly with the frontend (like Momentum) using APIs, making the process organized and easy to manage.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Swiper JS -->
+<script src="img/https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const carousels = document.querySelectorAll('.swiper');
+  carousels.forEach((carousel) => {
+    new Swiper(carousel, {
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: carousel.querySelector('.swiper-button-next'),
+        prevEl: carousel.querySelector('.swiper-button-prev')
+      }
+    });
+  });
+</script>
+
+
+  <section id="stacks">
+    <h2>Tech Stack</h2>
+    <div class="stacks">
+      <div class="stack-item"><i class="fab fa-html5"></i>HTML</div>
+      <div class="stack-item"><i class="fab fa-css3-alt"></i>CSS</div>
+      <div class="stack-item"><i class="fab fa-js"></i>JavaScript</div>
+      <div class="stack-item"><i class="fab fa-python"></i>Django</div>
+      <div class="stack-item"><i class="fas fa-cogs"></i>Google Apps Script</div>
+      <div class="stack-item"><i class="fas fa-database"></i>PostgreSQL</div>
+    </div>
+  </section>
+
+  <section class="experience">
+    <h2>Work Experience</h2>
+    <div class="experience-item">
+      <strong>Information Management & Digital Experience Director<br>AIESEC in Egypt</strong><br />
+      Jul 2024 – Jul 2025<br />
+        <li>Designed and launched +3 digital platforms (MEA Summit, Partner Portal, Conference Platform) supporting over 10,000 users.</li>
+        <li>Developed automated tools using Google Apps Script to track registration, feedback, and performance data across national events.</li>
+        <li>Led data analysis and visualization strategies for MC decision-making through integrated dashboards in Google Sheets.</li>
+        <li>Built dynamic email automation systems for reminders, confirmations, and lead engagement, saving over 200+ hours monthly.</li>
+    </div>
+    <div class="experience-item">
+      <strong>Social Media Manager<br>AIESEC in Egypt</strong><br />
+            Oct 2023 – May 2024<br />
+
+        <li>Planned and executed national digital marketing campaigns for key touchpoints including Y2B and Exchange Programs.</li>
+        <li>Increased engagement rate by 60% across Instagram and Facebook through storytelling-based content strategy.</li>
+        <li>Collaborated with local designers and marketing teams across 20+ entities to align national branding and messaging.</li>
+        <li>Developed automated design workflows using Figma and content calendars using Google Sheets.</li>
+    </div>
+  </section>
+<section id="contact" style="padding: 60px 20px; ">
+  <h2 style="font-size: 2rem; margin-bottom: 30px; border-left: 4px solid var(--primary-color); padding-left: 10px; display: inline-block; animation: fadeInLeft 0.8s ease forwards;">Contact Me</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; animation: fadeIn 1s ease-in-out;">
+    <p> <a class="fas fa-envelope" href="mailto:ibraheem.a.nassar@gmail.com"></a></p>
+    <p><a  class="fab fa-whatsapp" href="https://wa.me/+201205455289" target="_blank" style="   color:#007bff; font-weight: 600;
+"></a></p>
+    <p><a class="fab fa-linkedin" href="https://linkedin.com/in/ibraheem-a-nassar/" target="_blank"></a></p>
+    <p> <a class="fab fa-facebook" href="https://facebook.com/ibraheem.nassar74" target="_blank"></a></p>
+    <p><a  class="fab fa-instagram" href="https://instagram.com/nassarx18" target="_blank"></a></p>
+  </div>
+</section>
+ <div class="footer">
+Made with ❤️, Developed by <a href="https://www.linkedin.com/in/ibraheem-a-nassar/" target="_blank" >Ibraheem Nassar </div>
+
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = 'flex';
+    }
+    function closeModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+  </script>
+  <script>
+  const video = document.getElementById('demoVideo');
+  video.playbackRate = 2.0; // 2x speed
+</script>
+
+</body>
+</html>
