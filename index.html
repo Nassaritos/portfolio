@@ -54,6 +54,24 @@
   </section>
 <!-- Only project-related section shown below for brevity -->
 <!-- Swiper CSS -->
+ <script>
+  // Apply saved theme on load
+  window.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme');
+    const toggle = document.getElementById('themeToggle');
+    const text = document.getElementById('themeText');
+
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark-mode');
+      toggle.checked = true;
+      text.textContent = 'NIGHT MODE';
+    } else {
+      toggle.checked = false;
+      text.textContent = 'DAY MODE';
+    }
+  });
+</script>
+
 <script>
   const toggle = document.getElementById('themeToggle');
   const text = document.getElementById('themeText');
